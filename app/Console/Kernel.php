@@ -8,11 +8,14 @@ use App\Models\Integration;
 use App\Models\PaymentPlans;
 use App\Models\ScheduledDocuments;
 use App\Models\YokassaSubscriptions;
+use App\Models\UserOpenai;
 use Carbon\Carbon;
 use App\Console\CustomScheduler;
 use App\Console\Commands\CheckSubscriptionEnd;
 use Spatie\Health\Commands\RunHealthChecksCommand;
 use App\Services\GatewaySelector;
+use Illuminate\Support\Facades\Http;
+
 
 class Kernel extends ConsoleKernel
 {
